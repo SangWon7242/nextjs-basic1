@@ -55,3 +55,13 @@ git push origin main
 ## 챕터4, 폴더 구조 변경, Image 컴포넌트 사용
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/196c967265921e50047c32abc8d142734bb97959)
+
+## 챕터5, 로컬 폰트 적용
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/36696e90503880b02b20f1d2e6f91145d959a4a1)
+
+- [https://lucide.dev/](https://lucide.dev/)
+
+```
+npm install lucide-react
+```

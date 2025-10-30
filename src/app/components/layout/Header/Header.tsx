@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Handbag } from "lucide-react";
 import pcLogo from "../../../../assets/images/pc-logo.png";
 import mobileLogo from "../../../../assets/images/mobile-logo.png";
 
@@ -30,6 +31,23 @@ const menuList = [
   },
 ];
 
+const userMenuList = [
+  {
+    name: "로그인",
+    href: "#",
+  },
+  {
+    name: "회원가입",
+    href: "#",
+  },
+  {
+    name: "장바구니",
+    href: "#",
+    icon: <Handbag />,
+    iconOnly: true,
+  },
+];
+
 export default function Header() {
   return (
     // 헤더 임시 컬러 : bg-black
@@ -41,13 +59,13 @@ export default function Header() {
             <Image src={mobileLogo} alt="mobile로고" className="hidden" />
           </Link>
         </div>
-        <nav className="menu-box">
+        <nav className="menu-box ml-5">
           <ul className="flex text-white h-full">
             {menuList.map((menu) => (
               <li key={menu.name}>
                 <Link
                   href={menu.href}
-                  className="flex h-full items-center px-5"
+                  className="flex h-full items-center px-5 hover:text-[#FFFFFF80] transition-colors duration-500"
                 >
                   {menu.name}
                 </Link>
@@ -55,6 +73,29 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+        <div className="user-menu-box ml-auto">
+          <ul className="flex h-full text-white">
+            {userMenuList.map((menu) => (
+              <li key={menu.name}>
+                {menu.iconOnly ? (
+                  <Link
+                    href={menu.href}
+                    className="flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500"
+                  >
+                    {menu.icon}
+                  </Link>
+                ) : (
+                  <Link
+                    href={menu.href}
+                    className="flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500"
+                  >
+                    {menu.name}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </header>
   );

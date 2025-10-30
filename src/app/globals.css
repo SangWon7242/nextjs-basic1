@@ -19,3 +19,30 @@
     --foreground: #ededed;
   }
 }
+
+/* user-menu-box */
+.user-menu-box {
+  li:nth-child(2) {
+    a {
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.5px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  li:last-child {
+    a {
+      padding-left: 20px;
+    }
+  }
+}
