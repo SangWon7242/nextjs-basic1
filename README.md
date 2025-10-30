@@ -54,7 +54,7 @@ git push origin main
 
 ## 챕터4, 폴더 구조 변경, Image 컴포넌트 사용
 
-- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/196c96726592https://meet.google.com/dqm-sahj-fdg1e50047c32abc8d142734bb97959)
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/196c967265921e50047c32abc8d142734bb97959)
 
 ## 챕터5, 로컬 폰트 적용
 
@@ -69,6 +69,6 @@ git push origin main
 npm install lucide-react
 ```
 
-## 챕터7, pc 메뉴 완성
+## 챕터7, 헤더 스크롤 이벤트 구현
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/c6faf1394bfe168441a3a92f273e4d7a9a187e44)
