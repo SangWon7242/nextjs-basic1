@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Handbag } from "lucide-react";
 import pcLogo from "../../../../assets/images/pc-logo.png";
 import mobileLogo from "../../../../assets/images/mobile-logo.png";
+import { useState, useEffect } from "react";
 
 const menuList = [
   {
@@ -49,14 +52,52 @@ const userMenuList = [
 ];
 
 export default function Header() {
+  // 상태 관리
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  // 이벤트 처리
+  useEffect(() => {
+    let timeoutId: any = null;
+
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+
+    // 디바운싱 로직
+    // 스크롤 할 때마다 handleScroll 실행
+    // 스크롤이 멈추고 0.1초가 지나면 최종적으로 실행
+    const handleScroll = () => {
+      timeoutId = setTimeout(() => {
+        setIsScrolled(window.scrollY > 30);
+      }, 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, []);
+
+  // 렌더링
   return (
     // 헤더 임시 컬러 : bg-black
-    <header className="top-bar border-b bg-black">
+    <header
+      className={`${
+        isScrolled ? "bg-[#ffffff80]" : ""
+      } top-bar fixed inset-x-0 top-0 z-100`}
+    >
       <div className="con max-w-[var(--site-width)] mx-auto px-[5px] h-20 flex">
         <div className="logo-box">
           <Link href="/" className="flex items-center h-full w-[85px]">
-            <Image src={pcLogo} alt="pc로고" />
-            <Image src={mobileLogo} alt="mobile로고" className="hidden" />
+            {isScrolled ? (
+              <Image src={mobileLogo} alt="mobile로고" />
+            ) : (
+              <Image src={pcLogo} alt="pc로고" />
+            )}
           </Link>
         </div>
         <nav className="menu-box ml-5">
@@ -65,7 +106,9 @@ export default function Header() {
               <li key={menu.name}>
                 <Link
                   href={menu.href}
-                  className="flex h-full items-center px-5 hover:text-[#FFFFFF80] transition-colors duration-500"
+                  className={`flex h-full items-center px-5 hover:text-[#FFFFFF80] transition-colors duration-500 ${
+                    isScrolled ? "text-[#000000]" : ""
+                  }`}
                 >
                   {menu.name}
                 </Link>
@@ -80,14 +123,18 @@ export default function Header() {
                 {menu.iconOnly ? (
                   <Link
                     href={menu.href}
-                    className="flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500"
+                    className={`flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500 ${
+                      isScrolled ? "text-[#000000]" : ""
+                    }`}
                   >
                     {menu.icon}
                   </Link>
                 ) : (
                   <Link
                     href={menu.href}
-                    className="flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500"
+                    className={`flex h-full items-center px-4 hover:text-[#FFFFFF80] transition-colors duration-500 ${
+                      isScrolled ? "text-[#000000]" : ""
+                    }`}
                   >
                     {menu.name}
                   </Link>

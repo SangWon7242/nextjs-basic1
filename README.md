@@ -60,7 +60,10 @@ git push origin main
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/36696e90503880b02b20f1d2e6f91145d959a4a1)
 
+## 챕터6, pc 메뉴 완성
+
 - [https://lucide.dev/](https://lucide.dev/)
+- [커밋]()
 
 ```
 npm install lucide-react

@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pt-[80px]">
         <h1>안녕하세요</h1>
       </main>
     </>

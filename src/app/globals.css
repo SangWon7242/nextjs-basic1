@@ -20,6 +20,11 @@
   }
 }
 
+body {
+  background-color: #dfdfdf; /* 임시 */
+  height: 2000px;
+}
+
 /* user-menu-box */
 .user-menu-box {
   li:nth-child(2) {
