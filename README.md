@@ -51,3 +51,7 @@ git push origin main
 ## 챕터3, 로고, 메뉴 구현, 메뉴를 컴포넌트 기반으로 구현
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/56472b167b0a51cf89b619c6b7dfcec5215d7663)
+
+## 챕터4, 폴더 구조 변경, Image 컴포넌트 사용
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/196c967265921e50047c32abc8d142734bb97959)

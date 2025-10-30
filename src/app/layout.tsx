@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import localFont from "next/font/local";
+
+const nexonGothic = localFont({
+  src: "../assets/fonts/NEXONLv1Gothic/NEXONLv1GothicRegular.ttf",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased ${nexonGothic.className}`}>{children}</body>
     </html>
   );
 }
