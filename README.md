@@ -72,3 +72,7 @@ npm install lucide-react
 ## 챕터7, 헤더 스크롤 이벤트 구현
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/c6faf1394bfe168441a3a92f273e4d7a9a187e44)
+
+## 챕터8, shopBest 섹션 구현, 컴포넌트별로 분리
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/b198c4d440e4c7be29123e5bf322b0b2b42f1f6e)
