@@ -1,11 +1,14 @@
-import Header from "./components/layout/Header/Header";
+import Header from "./components/layout/Header";
+import MainTopSection from "../components/home/MainSection/MainTopSection";
+import ShopBestSection from "../components/home/ShopBestSection/ShopBestSection";
 
 export default function App() {
   return (
     <>
       <Header />
-      <main className="pt-[80px]">
-        <h1>안녕하세요</h1>
+      <main>
+        <MainTopSection />
+        <ShopBestSection />
       </main>
     </>
   );

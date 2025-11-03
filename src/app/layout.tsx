@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 const nexonGothic = localFont({
-  src: "../assets/fonts/NEXONLv1Gothic/NEXONLv1GothicRegular.ttf",
+  src: "../assets/fonts/NEXONLv1GothicLowOTF.otf",
   display: "swap",
 });
 
