@@ -23,3 +23,49 @@ export type WonderFiItem = {
   date: string;
   price: string;
 };
+
+export type ReviewQuestionItem = {
+  id: number;
+  image: any;
+  text: string;
+};
+
+interface FooterCompany {
+  name: string;
+  image: any;
+  address: string;
+  mapLink: string;
+}
+
+interface FooterMessenger {
+  email: string;
+  kakao: string;
+  phone: string;
+}
+
+interface FooterContact {
+  email: string;
+  kakaoKo: string;
+  kakaoInt: string;
+  phone: string;
+}
+
+interface MethodItem {
+  messenger?: FooterMessenger;
+  contact?: FooterContact;
+}
+
+interface FooterSection {
+  id: string;
+  title: string;
+  titleEn: string;
+  order: string;
+  links?: { text: string; url: string }[];
+  info?: { label: string; sub?: string; holiday: string }[];
+  methods?: MethodItem[];
+}
+
+export interface FooterData {
+  company: FooterCompany;
+  sections: FooterSection[];
+}

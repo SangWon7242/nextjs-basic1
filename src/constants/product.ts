@@ -1,35 +1,5 @@
 import { IMAGES } from "./images";
-import { SubCardItems, SelectItems, WonderFiItem } from "@/types/product.types";
-
-export const SUB_CARD_ITEMS: SubCardItems[] = [
-  {
-    id: 1,
-    itemImage: IMAGES.shopKo2Image,
-    wifi: IMAGES.wifiImage,
-    title: "하루 2GB+고속무제한",
-    percent: 18,
-    price: "월 38,900원 ~",
-    width: "98px",
-  },
-  {
-    id: 2,
-    itemImage: IMAGES.shopKo3Image,
-    wifi: IMAGES.wifiImage,
-    title: "월 40GB 고속",
-    percent: 12,
-    price: "월 27,900원 ~",
-    width: "65px",
-  },
-  {
-    id: 3,
-    itemImage: IMAGES.shopKo4Image,
-    wifi: IMAGES.wifiImage,
-    title: "속도저하없는 고속무제한",
-    percent: 8,
-    price: "월 55,900원 ~",
-    width: "100px",
-  },
-];
+import { SelectItems, SubCardItems, WonderFiItem } from "@/types/product.types";
 
 export const SELECT_ITEMS: SelectItems[] = [
   {
@@ -50,6 +20,45 @@ export const SELECT_ITEMS: SelectItems[] = [
     title: "HomeFi",
     subTitle: "해외 포켓와이파이",
   },
+];
+
+export const SUB_CARD_ITEMS: SubCardItems[] = [
+  {
+    id: 1,
+    itemImage: IMAGES.shopKo2Image,
+    wifi: IMAGES.wifiImage,
+    title: "하루 2GB+고속무제한",
+    percent: 18,
+    price: "월 38,900원 ~",
+    width: "w-[98px]",
+  },
+  {
+    id: 2,
+    itemImage: IMAGES.shopKo3Image,
+    wifi: IMAGES.wifiImage,
+    title: "월 40GB 고속",
+    percent: 12,
+    price: "월 27,900원 ~",
+    width: "w-[65px]",
+  },
+  {
+    id: 3,
+    itemImage: IMAGES.shopKo4Image,
+    wifi: IMAGES.wifiImage,
+    title: "속도저하없는 고속무제한",
+    percent: 8,
+    price: "월 55,900원 ~",
+    width: "w-[100px]",
+  },
+  // {
+  //   id: 4,
+  //   itemImage: IMAGES.shopKoM1Image,
+  //   wifi: IMAGES.wifiImage,
+  //   title: "일 3GB + 고속무제한",
+  //   percent: 8,
+  //   price: "월 39,900원 ~",
+  //   width: "w-[100px]",
+  // },
 ];
 
 export const WONDERFI_ITEMS: WonderFiItem[] = [
