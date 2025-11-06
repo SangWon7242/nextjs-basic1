@@ -88,3 +88,7 @@ npm install lucide-react
 ## 챕터11, 버튼 컴포넌트에 variant 추가
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/9008e8995920ca42722fb429e2224b6d1edd228b)
+
+## 챕터12, 리뷰 섹션 구현
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/d4679557fa19713987494d168a8b29e04cc7174d)
