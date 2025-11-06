@@ -80,3 +80,11 @@ npm install lucide-react
 ## 챕터9, 헤더 컴포넌트 분리
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/53e010987796f87916175719b34f57f96b106cd8)
+
+## 챕터10, 테일윈드 커스텀 브레이크 포인트
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/6365929cf87e2550c495644a3531719f2f31c9f0)
+
+## 챕터11, 버튼 컴포넌트에 variant 추가
+
+- [커밋]()
