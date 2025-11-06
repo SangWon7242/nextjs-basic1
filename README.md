@@ -76,3 +76,7 @@ npm install lucide-react
 ## 챕터8, shopBest 섹션 구현, 컴포넌트별로 분리
 
 - [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/b198c4d440e4c7be29123e5bf322b0b2b42f1f6e)
+
+## 챕터9, 헤더 컴포넌트 분리
+
+- [커밋](https://github.com/SangWon7242/nextjs-basic1/commit/53e010987796f87916175719b34f57f96b106cd8)
